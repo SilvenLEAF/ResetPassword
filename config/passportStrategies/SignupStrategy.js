@@ -56,7 +56,7 @@ module.exports = SignupStrategy = new Strategy(
       // if not, create a new account
       User.create({
         'local.email': email,
-        'local.password': bcrypt.hashSync(password, bcrypt.genSaltSync());
+        'local.password': bcrypt.hashSync(password, bcrypt.genSaltSync()),
 
 
 
