@@ -111,6 +111,18 @@ require('./config/passportConfig');
 ------------------------------------------------- */
 app.use(require('./routes/authRoute'));
 app.use('/user', require('./routes/userRoute'));
+app.use(require('./routes/resetPasswordRoute'));
+
+/* -------------------------------------------
+.            SEND FORGOT FORM PAGE
+------------------------------------------- */
+app.get('/forgot', (req, res, next)=>{
+  try {
+    res.sendFile(path.join(__dirname, `client/build/forgot.html`));
+  } catch (err) {
+    next(err, req, res)
+  }
+})
 
 
 

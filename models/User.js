@@ -64,6 +64,10 @@ const FacebookSchema = new mongoose.Schema({
 const LocalSchema = new mongoose.Schema({
   email: String,
   password: String,
+
+  resetPasswordToken: String,
+  resetPasswordExpires: Date,
+
   username: String,
   profileImage: String,
 })
