@@ -3,11 +3,6 @@ I'm learning how Forgotten password and Password Reset flow works, including 2 w
 
 ***
 
-## See LIVE
-App is still in development. Link will be added here in the future
-
-
-***
 
 ## Top features
 * **Password Reset**
