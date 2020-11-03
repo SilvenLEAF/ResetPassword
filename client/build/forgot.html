@@ -9,12 +9,13 @@
 
 
   <h1>Forgot Password?</h1>
-
+  
+  <p>Here you will type your email that you registered with your account</p>
 
   <h4>Type your email</h4>
 
 
-  <form action="/forgot" method="post">
+  <form>
     <input type="text" name="email" id="email" required>
     <button type="submit">Submit</button>
   </form>
@@ -25,20 +26,20 @@
     
     
     const myForm = document.querySelector('form');
-    const inputEmail = document.querySelector('#email');
+    const emailInput = document.querySelector('#email');
     
     
     myForm.addEventListener('submit', async (e)=>{
       e.preventDefault();
 
-      const newObj = { email: inputEmail.value };
+      const dataObj= { email: emailInput.value };
 
       const res = await fetch('/forgot', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(newObj)
+        body: JSON.stringify(dataObj)
       })
     });
 
