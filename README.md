@@ -33,6 +33,7 @@ I'm learning how Forgotten password and Password Reset flow works, including 2 w
 * **
 
 ## Hosted on
+Still not hosted. Still on development
 **Heroku** as *ManashSarmaTheEmperor@gmail.com*
 ***
 
